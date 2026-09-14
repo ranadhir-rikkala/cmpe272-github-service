@@ -1,4 +1,4 @@
-# CMPE-272 HW #2 — GitHub Issues Gateway
+# CMPE-272 HW #2 — GitHub Service
 
 A Spring Boot 3 service that wraps the GitHub REST API for Issues on one
 repository, handles GitHub webhooks with HMAC verification, and ships an
