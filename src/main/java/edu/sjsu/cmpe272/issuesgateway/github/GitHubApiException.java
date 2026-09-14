@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.github;
 
+/*
+ * Author: Shravani Naikoti
+ * Contribution: Exception carrying mapped GitHub error status and Retry-After
+ */
+
 
 
 public class GitHubApiException extends RuntimeException {

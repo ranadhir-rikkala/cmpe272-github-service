@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.controller;
 
+/*
+ * Author: Sai Vineetha Tirumalla
+ * Contribution: REST controller for issue CRUD and comment routes
+ */
+
 import edu.sjsu.cmpe272.issuesgateway.dto.CommentResponse;
 import edu.sjsu.cmpe272.issuesgateway.dto.CreateCommentRequest;
 import edu.sjsu.cmpe272.issuesgateway.dto.CreateIssueRequest;

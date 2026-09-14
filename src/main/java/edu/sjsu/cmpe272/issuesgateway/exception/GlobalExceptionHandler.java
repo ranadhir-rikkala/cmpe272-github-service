@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.exception;
 
+/*
+ * Author: Sai Vineetha Tirumalla
+ * Contribution: Central exception handling; GitHub and catch-all handlers added by Ranadhir Reddy Rikkala
+ */
+
 import edu.sjsu.cmpe272.issuesgateway.dto.ApiError;
 import edu.sjsu.cmpe272.issuesgateway.github.GitHubApiException;
 import org.springframework.http.ResponseEntity;

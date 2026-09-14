@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.controller;
 
+/*
+ * Author: Mukesh Singh
+ * Contribution: Webhook receiver, event filtering, dedupe and events listing
+ */
+
 import edu.sjsu.cmpe272.issuesgateway.model.WebhookEvent;
 import edu.sjsu.cmpe272.issuesgateway.repository.WebhookEventRepository;
 import edu.sjsu.cmpe272.issuesgateway.service.HmacService;

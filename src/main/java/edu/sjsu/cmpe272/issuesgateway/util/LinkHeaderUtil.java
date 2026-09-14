@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.util;
 
+/*
+ * Author: Shravani Naikoti
+ * Contribution: Parser for the GitHub Link pagination header
+ */
+
 
 
 import java.util.LinkedHashMap;

@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.dto;
 
+/*
+ * Author: Sai Vineetha Tirumalla
+ * Contribution: Response model for an issue
+ */
+
 import java.time.OffsetDateTime;
 import java.util.List;
 

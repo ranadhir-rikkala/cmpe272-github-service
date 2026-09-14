@@ -3,6 +3,11 @@
 
 package edu.sjsu.cmpe272.issuesgateway.model;
 
+/*
+ * Author: Mukesh Singh
+ * Contribution: Persisted webhook delivery entity
+ */
+
 import jakarta.persistence.*;
 import java.time.Instant;
 

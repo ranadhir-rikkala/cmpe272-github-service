@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.controller;
 
+/*
+ * Author: Sai Vineetha Tirumalla
+ * Contribution: Unit tests for route validation and error responses
+ */
+
 import edu.sjsu.cmpe272.issuesgateway.dto.IssueResponse;
 import edu.sjsu.cmpe272.issuesgateway.service.IssueService;
 import org.junit.jupiter.api.BeforeEach;

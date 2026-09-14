@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.dto;
 
+/*
+ * Author: Sai Vineetha Tirumalla
+ * Contribution: Request model and validation for issue creation
+ */
+
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 

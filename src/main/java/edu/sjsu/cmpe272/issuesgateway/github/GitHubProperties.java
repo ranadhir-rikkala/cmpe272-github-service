@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.github;
 
+/*
+ * Author: Shravani Naikoti
+ * Contribution: Configuration properties bound from environment variables
+ */
+
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

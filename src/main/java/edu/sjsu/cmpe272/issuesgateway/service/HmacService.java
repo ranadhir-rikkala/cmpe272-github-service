@@ -1,5 +1,10 @@
 package edu.sjsu.cmpe272.issuesgateway.service;
 
+/*
+ * Author: Mukesh Singh
+ * Contribution: HMAC SHA-256 signature verification with constant-time comparison
+ */
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
