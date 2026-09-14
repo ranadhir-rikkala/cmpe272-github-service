@@ -85,4 +85,16 @@ public class GlobalExceptionHandler {
 
         return ResponseEntity.badRequest().body(error);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ApiError> handleUnexpected(Exception exception) {
+        ApiError error = new ApiError(
+                "Unexpected server error",
+                500,
+                OffsetDateTime.now(),
+                Map.of()
+        );
+
+        return ResponseEntity.status(500).body(error);
+    }
 }
