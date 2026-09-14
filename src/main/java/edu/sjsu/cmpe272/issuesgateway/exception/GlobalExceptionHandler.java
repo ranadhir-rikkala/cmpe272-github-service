@@ -1,6 +1,7 @@
 package edu.sjsu.cmpe272.issuesgateway.exception;
 
 import edu.sjsu.cmpe272.issuesgateway.dto.ApiError;
+import edu.sjsu.cmpe272.issuesgateway.github.GitHubApiException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -51,6 +52,24 @@ public class GlobalExceptionHandler {
         );
 
         return ResponseEntity.badRequest().body(error);
+    }
+
+    @ExceptionHandler(GitHubApiException.class)
+    public ResponseEntity<ApiError> handleGitHub(GitHubApiException ex) {
+        ApiError error = new ApiError(
+                ex.getMessage(),
+                ex.getStatusCode(),
+                OffsetDateTime.now(),
+                Map.of()
+        );
+
+        ResponseEntity.BodyBuilder builder = ResponseEntity.status(ex.getStatusCode());
+
+        if (ex.getRetryAfter() != null) {
+            builder.header("Retry-After", ex.getRetryAfter());
+        }
+
+        return builder.body(error);
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
