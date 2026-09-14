@@ -7,6 +7,7 @@ package edu.sjsu.cmpe272.issuesgateway.github;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.http.HttpHeaders;
+import org.springframework.http.client.JdkClientHttpRequestFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
@@ -31,6 +32,7 @@ public class GitHubClient {
 
         this.restClient = restClientBuilder
                 .baseUrl(properties.getApiUrl())
+                .requestFactory(new JdkClientHttpRequestFactory())
                 .defaultHeaders(headers -> {
                     headers.setBearerAuth(properties.getToken());
                     headers.set(
